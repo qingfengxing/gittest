@@ -5,13 +5,24 @@ import java.io.Serializable;
 public class User implements Serializable {
     private String name;
     private Integer age;
+    private Integer id;
+
 
     public User() {
     }
 
-    public User(String name, Integer age) {
+    public User(String name, Integer age, Integer id) {
         this.name = name;
         this.age = age;
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {
